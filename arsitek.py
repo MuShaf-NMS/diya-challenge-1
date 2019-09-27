@@ -1,6 +1,6 @@
-f = open('data_arsitek.txt')
-List = f.readlines()
-def baca_file(l):
+def baca_file(a):
+  f = open(a)
+  l = f.readlines()
   datamentah = []
   data = []
   for i in l:
@@ -12,8 +12,8 @@ def baca_file(l):
     elif i >= 1:
       a.append(datamentah[i])
   data.append(a)
+  f.close()
   return data
-f.close()
 def proses(a,b):
   l_baru = []
   lis = []
@@ -45,7 +45,8 @@ def hasil_akhir(a):
           w += 1
     hasil.append(w)
   return hasil
-dari_file = baca_file(List)
+data = 'data.txt'
+dari_file = baca_file(data)
 a = dari_file[0]
 b = dari_file[1]
 Data = proses(a,b)
