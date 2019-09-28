@@ -9,5 +9,4 @@ for j in range(len(kasir)):
       t = antri.index(k)
       a += waktu[t]
   akumulasi.append(a)
-print(akumulasi)
 print('waktu yang dibutuhkan untuk melayani seluruh antrian adalah ',max(akumulasi), ' menit')
