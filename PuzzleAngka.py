@@ -1,6 +1,3 @@
-from datetime import datetime
-frmt = '%H:%M:%S'
-start = datetime.now().strftime(frmt)
 def baca(file):
     f = open(file)
     l = f.readlines()
@@ -69,6 +66,3 @@ b = baca(f)
 h = hasil(b)
 for i in h:
     print(i)
-end = datetime.now().strftime(frmt)
-dtime = datetime.strptime(end,frmt)-datetime.strptime(start,frmt)
-print(dtime)
