@@ -61,8 +61,10 @@ def hasil(Data):
                     e.append(int(f[j]))
                 h.append(max(e))
     return h
+s = ['56','1111','9462']
 f = 'file.txt'
 b = baca(f)
+print(b)
 h = hasil(b)
 for i in h:
     print(i)
